@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion'; // Импортируем framer-motion
-import Card from './components/card'; // Путь к компоненту Card
+import Card from './components/Card'; // Путь к компоненту Card
 import databrand from './data/databrand'; // Путь к данным
 
 export default function Brand() {
