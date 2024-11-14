@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Card({ title, text, img }) {
   return (
-    <div className="card  w-[90%] h-[200px] p480:h-[220px]  p768:w-[220px] cursor-pointer p768:h-[120px] overflow-hidden relative group rounded-lg shadow-lg transition-all duration-500">
+    <div  className="card  w-[90%] h-[200px] p480:h-[220px]  p768:w-[220px] cursor-pointer p768:h-[120px] overflow-hidden relative group rounded-lg shadow-lg transition-all duration-500">
       {/* Анимация линии, которая будет светиться по краям */}
       <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-transparent to-transparent group-hover:from-blue-500 group-hover:via-indigo-500 group-hover:to-purple-500 border-4 border-transparent rounded-lg transition-all duration-1000"></div>
 

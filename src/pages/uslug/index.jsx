@@ -11,7 +11,7 @@ export default function Uslug() {
         </h2>
         <div className="w-[80%] h-[2px] mx-auto bg-zinc-300 my-4 opacity-10"></div>
        {/* Первая строка */}
-       <div className="card-row-1 mt-10">
+       <div className="card-row-1 mt-10  p768:mr-8">
          {FirstClient.map((item, index) => (
            <Cardadvantages 
              key={index}
@@ -24,7 +24,7 @@ export default function Uslug() {
        </div>
 
        {/* Вторая строка */}
-       <div className="card-row-2 mt-10">
+       <div className="card-row-2 mt-10 p768:mr-8">
          {SecondClient.map((item, index) => (
            <Cardadvantages
              key={index}

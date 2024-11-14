@@ -56,7 +56,8 @@ export default function FifthInfoclient() {
         alt="Background"
       />
       <div className="container relative z-10 py-6">
-        <div className="flex flex-wrap justify-center items-center gap-2 text-gray-800">
+        <div data-aos="fade-right" data-aos-duration="1000"
+             data-aos-offset="50" className="flex flex-wrap justify-center items-center gap-2 text-gray-800">
         {counts.map((item, index) => (
             <Card 
               key={index} 

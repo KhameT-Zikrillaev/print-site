@@ -55,22 +55,27 @@ export default function AnimatedIntro() {
           
           {/* Left Content */}
           <div className="lg:w-1/2 flex flex-col justify-center text-white space-y-6 p480:px-4 lg:items-start items-center relative z-10">
-            <h2 className="text-lg font-semibold text-indigo-400 tracking-widest uppercase">
+            <h2 data-aos="fade-right" data-aos-duration="1500"
+             data-aos-offset="50" data-aos-delay="1500" className="text-lg font-semibold text-indigo-400 tracking-widest uppercase">
               Надежность и качество
             </h2>
-            <h1 className="text-3xl p768:text-5xl font-bold leading-tight text-shadow-lg text-white text-center lg:text-left">
+            <h1 data-aos="fade-right" data-aos-duration="1500"
+             data-aos-offset="50" data-aos-delay="1500" className="text-3xl p768:text-5xl font-bold leading-tight text-shadow-lg text-white text-center lg:text-left">
               Ремонт и заправка картриджей для принтеров
             </h1>
-            <p className="text-md text-gray-300 leading-relaxed max-w-md text-center lg:text-left">
+            <p data-aos="fade-up" data-aos-duration="1500"
+             data-aos-offset="50" data-aos-delay="1500" className="text-md text-gray-300 leading-relaxed max-w-md text-center lg:text-left">
   Предлагаем качественный ремонт принтеров, компьютеров, моноблоков и другой офисной техники, а также заправку картриджей с гарантией.
 </p>
             <div className="flex space-x-4 mt-4">
-              <button className="bg-indigo-500 text-[12px] p480:text-[16px] bg-opacity-20 text-indigo-300 font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-opacity-40 transition duration-300 transform hover:scale-105">
+              <a href="/mastercall" data-aos="fade-right" data-aos-duration="1500"
+             data-aos-offset="50" data-aos-delay="1500" className="bg-indigo-500 text-[12px] p480:text-[16px] bg-opacity-20 text-indigo-300 font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-opacity-40 transition duration-300 transform hover:scale-105">
                 Заказать ремонт
-              </button>
-              <button className="border-2 text-[12px] p480:text-[16px] border-indigo-400 text-indigo-300 py-3 px-8 rounded-lg hover:bg-indigo-400 hover:text-white transition duration-300 transform hover:scale-105">
+              </a>
+              <a href="/about" data-aos="fade-left" data-aos-duration="1500"
+             data-aos-offset="50" data-aos-delay="1500" className="border-2 text-[12px] p480:text-[16px] border-indigo-400 text-indigo-300 py-3 px-8 rounded-lg hover:bg-indigo-400 hover:text-white transition duration-300 transform hover:scale-105">
                 Узнать подробнее
-              </button>
+              </a>
             </div>
           </div>
 

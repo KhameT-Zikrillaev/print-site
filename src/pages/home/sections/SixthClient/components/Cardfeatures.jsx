@@ -3,7 +3,8 @@ import React from 'react';
 
 export default function Cardfeatures({ title, text, icon, style, nums, datatitle }) {
   return (
-    <div
+    <div data-aos="fade-right" data-aos-duration="1000"
+             data-aos-offset="50"
       className={`relative bg-white flex flex-col  p768:flex max-w-[450px] w-full px-8 py-2 border cursor-pointer rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out  mx-auto transform hover:scale-105 ${style}`}
     >
       <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-purple-500 to-indigo-500 opacity-10 rounded-2xl pointer-events-none"></div>

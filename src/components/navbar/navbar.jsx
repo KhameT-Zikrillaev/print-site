@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './navbar.css';
-
+import logo from '../../assets/images/logo-print.png';
 
 
 export default function Navbar() {
@@ -30,16 +30,12 @@ export default function Navbar() {
 
   return (
     <div
-      className={`navbar border-r-emerald-700 h-[80px] ${isScrolled ? 'navbar-active' : ''} bg-gradient-to-r from-[#1B2838] to-[#2A3F54] `}
+      className={`navbar border-r-emerald-700 h-[80px] ${isScrolled ? 'navbar-active' : ''} bg-[#1B2838] `}
     >
       <div className="container relative h-full flex justify-between items-center px-[25px]">
         <a href="/">
-        <div className='logo w-[50px] flex'>
-          {/* <img className='rounded-md' src={logo} alt="logo" /> */}
-          
-          <div className='text-black ml-2 flex flex-col'>
-            <span className='font-semibold'>LOGO</span>
-          </div>
+        <div className='logo w-[140px] flex'>
+          <img className='rounded-md' src={logo} alt="logo" />
         </div>
         </a>
         {/* Навигация для десктопа */}

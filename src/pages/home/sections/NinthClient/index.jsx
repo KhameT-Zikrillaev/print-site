@@ -15,8 +15,9 @@ export default function Client() {
   };
 
   return (
-    <div className="clients bg-gradient-to-r px-2 from-[#1B2838] to-[#2A3F54] mt-[-10px] py-[50px]" id="about">
-      <div className="container relative">
+    <div  className="clients bg-gradient-to-r px-2 from-[#1B2838] to-[#2A3F54] mt-[-10px] py-[50px]" id="about">
+      <div className="container relative" data-aos="fade-right" data-aos-duration="2000"
+             data-aos-offset="50">
         <h2 className="text-white text-center text-[40px] my-2">Отзыв клиентов</h2>
         <Swiper
           slidesPerView={1}
@@ -39,7 +40,7 @@ export default function Client() {
         >
           {clientsData.map((client, index) => (
             <SwiperSlide key={index}>
-              <ClientCard name={client.name} image={client.image} text={client.text} />
+              <ClientCard  name={client.name} image={client.image} text={client.text} />
             </SwiperSlide>
           ))}
         </Swiper>

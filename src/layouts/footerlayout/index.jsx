@@ -1,5 +1,5 @@
 import React from "react";
-
+import logo from '../../assets/images/logo-print.png';
 export default function footerlayout() {
   return (
     <>
@@ -8,9 +8,9 @@ export default function footerlayout() {
           <div className="flex flex-wrap justify-between">
             <div className="w-full md:w-1/4 mb-6 md:mb-0">
               <img
-                src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.avtomaster24.uz%2F&psig=AOvVaw1lV4N8M31s0c6q1_Z7pW9v&ust=1682941261694000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCPCZ86n7pv8CFQAAAAAdAAAAABAD"
+                src={logo}
                 alt="logo"
-                className="w-24 h-auto mb-4"
+                className="w-[150px] h-auto mb-4"
               />
             </div>
             <div className="w-full md:w-1/4 mb-6 md:mb-0">
@@ -35,27 +35,28 @@ export default function footerlayout() {
             </div>
             <div className="w-full md:w-1/4 mb-6 md:mb-0">
               <h4 className="text-lg font-bold mb-4">Контакты</h4>
-              <ul>
+              <ul  className="flex flex-col gap-2">
+              
+                <li className="text-sm">
+                <a className="hover:underline" href="mailto:tafakkurxizmatsamarasimchj@gmail.com">
+                tafakkurxizmatsamarasimchj@gmail.com
+                </a>
+                </li>
+            
+               
                 <li>
-                  <a
-                    href="mailto:javohir9953399@gmail.com"
-                    className="hover:underline"
-                  >
-                    Электронное почты
+                  <a href="tel:+998940511494" className="hover:underline">
+                  +998940511494
                   </a>
                 </li>
                 <li>
-                  <a href="tel:+998909953399" className="hover:underline">
-                    +998 90 995 33 99
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:underline">
+                  <a href="https://www.google.com/maps/place/11+uy/@41.2810676,69.202739,21172m/data=!3m1!1e3!4m10!1m2!2m1!1sSirg'ali+tumani,+Nomdanak+maxallasi,+Fayzli+3+to'r+ko'cha+11-uy!3m6!1s0x38ae8d0050816a0f:0xade9d9bf3920e2ad!8m2!3d41.3329977!4d69.2055478!15sCj9TaXJnJ2FsaSB0dW1hbmksIE5vbWRhbmFrIG1heGFsbGFzaSwgRmF5emxpIDMgdG8nciBrbydjaGEgMTEtdXmSARJhcGFydG1lbnRfYnVpbGRpbmfgAQA!16s%2Fg%2F11y55_l231?entry=ttu&g_ep=EgoyMDI0MTExMi4wIKXMDSoASAFQAw%3D%3D" className="hover:underline flex flex-col">
                     Адрес
+                    <span className="mt-2">
+                    Сиргалийский район, махалля Номданак, улица Файзли, дом 11.
+                    </span>
                   </a>
-                  <p className="mt-2">
-                    Город Ташкент; улица Шахрисабз: 56
-                  </p>
+    
                 </li>
               </ul>
             </div>
@@ -64,9 +65,9 @@ export default function footerlayout() {
               <p className="mb-4">
               Сломался ли ваш принтер или другая техника? Если у вас нет возможности привезти оборудование в мастерскую, наши специалисты готовы помочь! Все, что вам нужно сделать — это позвонить, и мы приедем к вам для диагностики и ремонта.
               </p>
-              <button className="bg-indigo-500 text-[12px] p480:text-[16px] bg-opacity-20 text-indigo-300 font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-opacity-40 transition duration-300 transform hover:scale-105">
+              <a href="/mastercall" className="bg-indigo-500 text-[12px] p480:text-[16px] bg-opacity-20 text-indigo-300 font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-opacity-40 transition duration-300 transform hover:scale-105">
                 На Выезд
-              </button>
+              </a>
             </div>
           </div>
           <div className="footer-bottom-container">
