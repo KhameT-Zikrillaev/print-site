@@ -36,7 +36,7 @@ export default function Index() {
 
 
  {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~advantages  section-2~~~~~~~ */}
-       <div className="advantages">
+       <div className="advantages mx-12">
        <h2 className=" text-3xl   p480:text-4xl  p768:text-5xl font-bold text-center text-black" >
   Наши Услуги
   </h2>
@@ -50,6 +50,7 @@ export default function Index() {
                 title={item.title}
                 text={item.text}
                 images={item.images}
+                description={item.description}
                 size="45%" // можно добавить сюда пропс для размеров
               />
             ))}
@@ -63,6 +64,7 @@ export default function Index() {
                 title={item.title}
                 text={item.text}
                 images={item.images}
+                description={item.description}
                 size="30%" // можно добавить сюда пропс для размеров
               />
             ))}

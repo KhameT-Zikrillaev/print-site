@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaShippingFast } from "react-icons/fa";
 
+export default function CardAdvantages({ title, text, images, description}) {
+  const [isExpanded, setIsExpanded] = useState(false);
 
-export default function Cardadvantages({title,text,images}) {
+  const handleToggleExpand = () => {
+    setIsExpanded(prevState => !prevState);
+  };
+
   return (
-    <div className="h-[250px] cursor-pointer">
+    <div className="relative h-[250px] cursor-pointer">
       <div className="relative h-full group">
-        <div className="rounded-3xl h-full overflow-hidden bg-[#EFEFEF]shadow-lg transition-all duration-500 transform group-hover:scale-105 group-hover:shadow-2xl hover:rotate-3">
+        <div className="rounded-3xl h-full overflow-hidden bg-[#EFEFEF] shadow-lg transition-all duration-500 transform group-hover:scale-105 group-hover:shadow-2xl hover:rotate-3">
           <img
             src={images}
             alt="Remont komputerov"
@@ -16,13 +21,31 @@ export default function Cardadvantages({title,text,images}) {
           <div className="absolute bottom-0 p-6 w-full bg-gradient-to-t from-black text-white bg-opacity-70 group-hover:bg-opacity-50 transition-all duration-300">
             <h3 className="text-xl font-bold mb-2 transform group-hover:scale-110 transition-all duration-300">{text}</h3>
             <h4 className="text-lg font-medium mb-4 transform group-hover:scale-105 transition-all duration-300">{title}</h4>
-            <button className="py-2 px-6 text-white  font-semibold rounded-full border-2 border-gray-800 hover:bg-slate-300 hover:text-blue-700 transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-800 focus:ring-opacity-50">
+            <button
+              onClick={handleToggleExpand}
+              className="py-2 px-6 text-white font-semibold rounded-full border-2 border-gray-800 hover:bg-slate-300 hover:text-blue-700 transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-800 focus:ring-opacity-50"
+            >
               Подробнее
             </button>
           </div>
         </div>
-        {/* Сложная тень без розового оттенка */}
-        <div className="absolute inset-0 rounded-3xl opacity-50 group-hover:opacity-70 transition-opacity duration-500"></div>
+
+        {/* Всплывающая карточка при нажатии "Подробнее" */}
+        <div
+          className={`absolute left-0 right-0 mx-auto p-4 w-[90%] max-w-lg bg-white rounded-lg shadow-lg transform transition-all duration-500 ${
+            isExpanded ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0 pointer-events-none'
+          }`}
+          style={{ bottom: isExpanded ? '0' : '-100%' }}
+        >
+          <button
+            onClick={handleToggleExpand}
+            className="absolute top-2 right-2 p-2 text-gray-800 text-xl font-semibold bg-white rounded-full hover:bg-gray-200 transition-all duration-200 focus:outline-none"
+          >
+            ✕
+          </button>
+          <h3 className="text-lg font-bold text-gray-900 mb-2">{title}</h3>
+          <p className="text-gray-700 mb-4">{description}</p>
+        </div>
       </div>
     </div>
   );

@@ -18,6 +18,7 @@ export default function Uslug() {
              title={item.title}
              text={item.text}
              images={item.images}
+             description={item.description}
              size="45%" // можно добавить сюда пропс для размеров
            />
          ))}
@@ -31,6 +32,7 @@ export default function Uslug() {
              title={item.title}
              text={item.text}
              images={item.images}
+             description={item.description}
              size="30%" // можно добавить сюда пропс для размеров
            />
          ))}

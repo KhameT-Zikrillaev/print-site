@@ -16,7 +16,7 @@ export default function Card({ title, text, img }) {
       </div>
 
       {/* Основной текст с эффектом пульсации, закругленными углами и градиентным фоном */}
-      <h3 className="title absolute z-10 text-white text-sm text-center w-[80%] font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-indigo-500 uppercase px-4 py-2 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-100 group-hover:opacity-0 group-hover:scale-110 transition-all duration-500 rounded-xl shadow-lg">
+      <h3 className="title absolute z-10 text-white text-[12px] text-center w-[95%] font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-indigo-500 uppercase px-4 py-2 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-100 group-hover:opacity-0 group-hover:scale-110 transition-all duration-500 rounded-xl shadow-lg">
         {title}
       </h3>
 
