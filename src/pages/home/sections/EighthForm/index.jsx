@@ -91,7 +91,7 @@ export default function EighthForm() {
               <input
                 type="tel"
                 name="phone"
-                placeholder="Номер телефона"
+                placeholder="940511494"
                 maxLength="9"
                 value={formData.phone}
                 onChange={handleChange}
@@ -112,15 +112,12 @@ export default function EighthForm() {
 
           {/* Правая часть - Карта */}
           <div className="right bg-gray-700 bg-opacity-60 rounded-lg shadow-lg flex items-center justify-center">
+
             <iframe 
-              className="rounded-lg" 
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2035.676863075005!2d69.20286754196145!3d41.33258027188475!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8d0050816a0f%3A0xade9d9bf3920e2ad!2s11%20uy!5e1!3m2!1sru!2sus!4v1731600772752!5m2!1sru!2sus"
-              width="100%" 
-              height="100%" 
-              allowFullScreen="" 
-              loading="lazy" 
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
+             className="rounded-lg" 
+             width="100%" 
+             height="100%" 
+            src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d5765.727072376834!2d69.279825!3d41.242401!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDE0JzMyLjYiTiA2OcKwMTYnNDcuNCJF!5e1!3m2!1sru!2s!4v1731646140513!5m2!1sru!2s" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </form>
 

@@ -24,7 +24,7 @@ export default function Cardfeatures({ title, text, icon, style, nums, datatitle
       </div>
 
       {/* Размещение `nums` и `datatitle` в правом верхнем углу */}
-      <div className="p768:absolute justify-center    bottom-2 right-4 text-indigo-500 font-semibold text-lg flex items-center space-x-1">
+      <div className="   p768:absolute    bottom-2 right-4 text-indigo-500 font-semibold text-lg flex justify-end  space-x-1">
         <span className='text-center'>{nums}</span>
         <span className='text-center'>{datatitle}</span>
       </div>

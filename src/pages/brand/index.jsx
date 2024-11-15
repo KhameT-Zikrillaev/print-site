@@ -12,16 +12,16 @@ export default function Brand() {
   };
 
   return (
-    <div className="brandpages bg-gradient-to-r from-[#1B2838] to-[#2A3F54]">
-      <div className="container flex flex-col justify-center items-center">
-        <h2 className="text-md p480:text-xl p768:text-2xl font-bold text-center text-zinc-300">
+    <div className="brandpages bg-gradient-to-r from-[#1B2838] to-[#2A3F54]" >
+      <div className="container px-4 py-6 flex flex-col justify-center items-center">
+      <h2 className="text-md p480:text-xl p768:text-2xl font-bold text-center text-zinc-300">
           Продажа и Бренды
         </h2>
         <div className="w-[80%] h-[2px] mx-auto bg-zinc-300 my-4 opacity-10"></div>
-    
         {/* Добавляем анимацию для отображаемых карточек */}
         {databrand.slice(0, showAll ? databrand.length : 4).map((brand, index) => (
           <motion.div 
+          
             key={index} 
             initial={{ opacity: 0, y: 20 }} // Начальная позиция карточки
             animate={{ opacity: 1, y: 0 }} // Конечная позиция карточки

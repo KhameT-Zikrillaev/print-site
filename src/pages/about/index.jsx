@@ -2,9 +2,9 @@ import React from 'react';
 
 export default function About() {
   return (
-    <div className="about bg-gradient-to-r from-[#1B2838] to-[#2A3F54] pb-4 px-4">
-            <h2 className="text-md p480:text-xl p768:text-2xl font-bold text-center text-zinc-300">
-          О наша компания
+    <div className="about bg-gradient-to-r from-[#1B2838] to-[#2A3F54] px-4 py-6">
+         <h2 className="text-md p480:text-xl p768:text-2xl font-bold text-center text-zinc-300">
+         О наша компания
         </h2>
         <div className="w-[80%] h-[2px] mx-auto bg-zinc-300 my-4 opacity-10"></div>
       <div className="container mx-auto max-w-5xl bg-gray-100 rounded-2xl shadow-lg p-8 p480:p-12 md:p-8 lg:px-16 transform transition duration-300  hover:shadow-2xl">

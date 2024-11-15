@@ -5,7 +5,7 @@ import  SecondClient from './data/SecondClient.js';
 export default function Uslug() {
   return (
     <>  <div className="advantages bg-gradient-to-r from-[#1B2838] to-[#2A3F54]">
-      <div className="container p-4">
+      <div className="container  px-4 py-6">
          <h2 className="text-md p480:text-xl p768:text-2xl font-bold text-center text-zinc-300">
           Наша Услуги
         </h2>

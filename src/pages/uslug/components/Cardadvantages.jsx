@@ -8,7 +8,8 @@ export default function CardAdvantages({ title, text, images, description }) {
   };
 
   return (
-    <div className="relative h-[250px] cursor-pointer">
+    <div className="relative h-[250px] cursor-pointer" data-aos="fade-up" data-aos-duration="1000"
+    data-aos-offset="50">
       <div className="relative h-full border-2 border-gray-300 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
         <img
           src={images}

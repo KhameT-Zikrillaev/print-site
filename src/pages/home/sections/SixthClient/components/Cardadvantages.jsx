@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import { FaShippingFast } from "react-icons/fa";
 
-export default function CardAdvantages({ title, text, images, description}) {
+export default function CardAdvantages({ title, text, images, description }) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const handleToggleExpand = () => {
@@ -9,8 +8,9 @@ export default function CardAdvantages({ title, text, images, description}) {
   };
 
   return (
-    <div className="relative h-[250px] cursor-pointer">
+    <div className="relative w-full  p768:w-[70%] p992:w-full mx-auto h-[250px] cursor-pointer">
       <div className="relative h-full group">
+        {/* Основная карточка */}
         <div className="rounded-3xl h-full overflow-hidden bg-[#EFEFEF] shadow-lg transition-all duration-500 transform group-hover:scale-105 group-hover:shadow-2xl hover:rotate-3">
           <img
             src={images}
@@ -30,21 +30,20 @@ export default function CardAdvantages({ title, text, images, description}) {
           </div>
         </div>
 
-        {/* Всплывающая карточка при нажатии "Подробнее" */}
+        {/* Всплывающая карточка */}
         <div
-          className={`absolute left-0 right-0 mx-auto p-4 w-[90%] max-w-lg bg-white rounded-lg shadow-lg transform transition-all duration-500 ${
-            isExpanded ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0 pointer-events-none'
+          className={`absolute inset-0 p-4 bg-[#1B2838] bg-opacity-95 rounded-3xl shadow-lg transition-all duration-500 ${
+            isExpanded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-full pointer-events-none'
           }`}
-          style={{ bottom: isExpanded ? '0' : '-100%' }}
         >
           <button
             onClick={handleToggleExpand}
-            className="absolute top-2 right-2 p-2 text-gray-800 text-xl font-semibold bg-white rounded-full hover:bg-gray-200 transition-all duration-200 focus:outline-none"
+            className="absolute top-2 right-2 p-2 text-white text-xl font-semibold  rounded-full transition-all duration-200 focus:outline-none"
           >
             ✕
           </button>
-          <h3 className="text-lg font-bold text-gray-900 mb-2">{title}</h3>
-          <p className="text-gray-700 mb-4">{description}</p>
+          <h3 className=" text-sm p480:text-xl p992:text-2xl w-[50%] font-bold text-white mb-2">{title}</h3>
+          <p className="text-white  text-sm   p480:text-xl p992:text-sm mb-4">{description}</p>
         </div>
       </div>
     </div>

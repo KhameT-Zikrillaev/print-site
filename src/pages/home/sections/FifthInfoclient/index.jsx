@@ -5,7 +5,7 @@ import Card from './components/card';
 
 export default function FifthInfoclient() {
   const [counts, setCounts] = useState(datainfo);
-  const targets = [10, 20000, 5000];
+  const targets = [6, 14000, 2500];
   const duration = 2000; // общее время анимации
   const ref = useRef(null);
 
