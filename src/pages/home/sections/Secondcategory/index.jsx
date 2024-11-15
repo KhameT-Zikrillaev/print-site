@@ -11,12 +11,14 @@ export default function Secondcategory() {
              data-aos-offset="0"
             data-aos="fade-right"   className="card-container w-full  p480:p-4 flex  flex-wrap justify-center gap-4">
         {datafiles.map((item, index) => (
+          <a href="/mastercall">
           <Card data-aos="fade-right"  
             key={index} 
             title={item.title} 
             text={item.text} 
             img={item.img} 
           />
+          </a>
         ))}
       </div>
     </div>

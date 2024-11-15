@@ -8,7 +8,7 @@ export default function CardAdvantages({ title, text, images, description }) {
   };
 
   return (
-    <div className="relative w-full  p768:w-[70%] p992:w-full mx-auto h-[250px] cursor-pointer">
+    <div className="relative w-full  p768:w-[70%] p992:w-full mx-auto h-[250px]">
       <div className="relative h-full group">
         {/* Основная карточка */}
         <div className="rounded-3xl h-full overflow-hidden bg-[#EFEFEF] shadow-lg transition-all duration-500 transform group-hover:scale-105 group-hover:shadow-2xl hover:rotate-3">
